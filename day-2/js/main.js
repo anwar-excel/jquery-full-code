@@ -3,8 +3,40 @@
 //     $('[href]').remove();
 //     });
 // });
+// $(document).ready(function(){
+//     $('button').click(function(){
+//     $('p[class!="text"]').remove();
+//     });
+// });
+// $(document).ready(function(){
+//     $('button').click(function(){
+//     $('[class="text"]').remove();
+//     });
+// });
+// $(document).ready(function(){
+//     $('button').dblclick(function(){
+//    alert("double click");
+//     });
+// });
+// $(document).ready(function(){
+//     $('.one').mouseenter(function(){
+//    alert("double click");
+//     });
+// });
+// $(document).ready(function(){
+//     $('.one').mouseleave(function(){
+//    alert("double click");
+//     });
+// });
+// $(document).ready(function(){
+//     $('.one').mouseenter(function(){
+//    alert("double click");
+//     });
+// });
 $(document).ready(function(){
-    $('button').click(function(){
-    $('p[class!="text"]').remove();
-    });
+   $('.one').hover(function(){
+    alert('enter');
+   },function(){
+    alert('leave');
+   });
 });
