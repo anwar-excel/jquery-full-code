@@ -75,9 +75,7 @@ $("document").ready(function(){
     // });
 });
 $("document").ready(function(){
-    $("#btn").click(function(){
-        $("#img1").slideUp(2000,function(){
-            $("#img1").slideDown(2000);
-        })
-      })
+    $("#img1").hover(function(){
+        $("#img1").slideUp(2000).css('opacity','1').slideDown(2000).fadeOut(2000).fadeIn(2000).fadeOut(4000).fadeIn(3000);
+    })
 });
