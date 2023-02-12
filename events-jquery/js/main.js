@@ -74,8 +74,35 @@ $("document").ready(function(){
     //     $("#img1").stop(2000);
     // });
 });
+// $("document").ready(function(){
+//     $("#img1").hover(function(){
+//         $("#img1").slideUp(2000).css('opacity','1').slideDown(2000).fadeOut(2000).fadeIn(2000).fadeOut(4000).fadeIn(3000);
+//     })
+// });
+
 $("document").ready(function(){
-    $("#img1").hover(function(){
-        $("#img1").slideUp(2000).css('opacity','1').slideDown(2000).fadeOut(2000).fadeIn(2000).fadeOut(4000).fadeIn(3000);
+    /*$(".div1").click(function(){
+        var x = $(".p1").html();
+        $("#span1").text(x)
+    }) 
+
+    $(".div1").click(function(){
+        alert($("h1").text());
+    }) 
+
+    $("#btn1").click(function(){
+        alert($(".p1").attr("id","p2id"));
     })
+    $(".p1").click(function(){
+        alert($(".p1").attrt("id"));
+    }) */
+
+    $("#btn1").click(function(){
+      $(".div1").css("background-color","green")
+    })
+    $(".div1").click(function(){
+        alert($(".div1").css("background-color"))
+    })
+
+    
 });
