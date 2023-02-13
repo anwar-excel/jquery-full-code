@@ -1,6 +1,7 @@
 #img1{
-    height: 250px;
-    width: 250px;
+    height: 80%vh;
+    width: 80vh;
+    margin: 5%;
     opacity: 0.4;
     position: absolute;
 }
