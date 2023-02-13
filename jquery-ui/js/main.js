@@ -80,3 +80,57 @@ $("document").ready(function(){
 
     })
 });
+
+// for sortable
+//
+$("document").ready(function(){
+    $(".sort").sortable({
+       opacity:0.5,
+       cursur:"grabbing",
+       containment:"parent",
+       delay:300,
+       distance:50
+
+    })
+});
+
+// for resizable
+//
+$("document").ready(function(){
+    $("#img1").resizable({
+        // animate: true,
+        containment: "parent",
+        maxHeight:400,
+        minHeight:150,
+        maxWidth:400,
+        minWidth:150,
+        // ghost:true,
+        // aspectRatio:true,
+        aspectRatio:16/9,
+
+    })
+});
+
+// for theme
+//
+$("document").ready(function(){
+    $("#dialog").dialog({
+        draggable:true,
+        resizable:true,
+        closeOnEscape:true,
+        model:false,
+        autoOpen:true
+
+    })
+    $("#date").datepicker({
+        showOtherMonths: true,
+        // selectOtherMonths:true,
+        // showButtonPannel:true,
+        changeMonth:true,
+        changeYear:true,
+        // minDate:new Date(2019,4,5),
+        // maxDate:new Date(2023,10,30),
+        // numberOfMonths:2
+    });
+
+});
