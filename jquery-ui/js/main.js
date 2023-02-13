@@ -10,3 +10,13 @@ $("document").ready(function(){
         numberOfMonths:2
     });
 })
+$("document").ready(function(){
+    $("#tool").tooltip({
+        track:true,
+        // show:{effect:"pulsate",duration:2000,delay:50},
+        // show:{effect:"blind",duration:2000,delay:50},
+        // show:{effect:"slideIn",duration:2000,delay:50},
+        show:{effect:"slideOut",duration:2000,delay:50},
+        hide:{effect:"explode",duration:2000}
+    });
+})
