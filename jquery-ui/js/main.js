@@ -29,3 +29,17 @@ $("document").ready(function(){
         event:"mouseover"
     });
 })
+
+$("document").ready(function(){
+    $("#btn1").click(function(){
+        $("#dialog").dialog("open")
+    })
+   $("#dialog").dialog({
+    title:"title using property",
+    draggable:false,
+    resizable:false,
+    closeOnEscape:false,
+    model:true,
+    autoOpen:false,
+   })
+})
