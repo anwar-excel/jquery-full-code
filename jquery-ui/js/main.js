@@ -55,3 +55,28 @@ $("document").ready(function(){
         autoFocus:true
     })
 });
+
+// for widget modification
+// var language = 
+$("document").ready(function(){
+    $("#dialog").dialog({
+        draggable:true,
+        resizable:true,
+        closeOnEscape:true,
+        model:false,
+        autoOpen:true
+    })
+});
+// for draggable
+//
+$("document").ready(function(){
+    $(".box").draggable({
+        // axis: "x",
+        cursur:"grabbing",
+        opacity:"0.5",
+        // containment:"parent",
+        snap:true,
+        snapTolerance: 100,
+
+    })
+});
