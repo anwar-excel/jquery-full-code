@@ -43,3 +43,15 @@ $("document").ready(function(){
     autoOpen:false,
    })
 })
+// for autocomplete
+// var language = 
+$("document").ready(function(){
+    $("#input").autocomplete({
+        source:["HTML","CSS","JAVASCRIPT","PHP","C","C++",
+        "C#"]
+    },{
+        delay:500,
+        minLength:2,
+        autoFocus:true
+    })
+});
